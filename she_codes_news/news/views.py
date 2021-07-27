@@ -14,6 +14,11 @@ class AddStoryView(generic.CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
+# print(kwargs)
+#         form = kwargs['form']
+#         form.instance.author = self.request.user
+#         form.save()
+#         return super(AddStoryView, self).form_valid(*args,**kwargs)
 
 class IndexView(generic.ListView):
     template_name = 'news/index.html'
