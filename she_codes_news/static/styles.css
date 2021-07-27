@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: rgb(233, 168, 233);
+    background-color: white);
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 img {
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 
 h1 {
@@ -46,7 +46,7 @@ nav {
 a {
     margin: 2px;
     text-decoration: none;
-    color: #000;
+    color: #7B2CBF;
 }
 
 a, p {
