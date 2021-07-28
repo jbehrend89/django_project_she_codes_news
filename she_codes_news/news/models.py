@@ -11,5 +11,5 @@ class NewsStory(models.Model):
     )
     pub_date = models.DateTimeField()
     content = models.TextField()
-    image = models.URLField(default='http://images4.fanpop.com/image/photos/15800000/Cupcakes-random-15805648-480-493.jpg')
+    image = models.URLField()
     
