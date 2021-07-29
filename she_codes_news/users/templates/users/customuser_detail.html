@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>User Profile</h2>
+<p>{{ object.username }}</p>
+{% for story in object.stories.all %}
+    {% include "news/storyCard.html" with story=story position=forloop.counter %}
+{% endfor %}
+{% endblock %}
