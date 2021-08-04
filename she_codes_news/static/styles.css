@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: white);
+    color: white;
+    background: #240046 url("images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
 }
 
 header {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
@@ -32,21 +37,34 @@ h3 {
 }
 
 #header-text {
-    flex-basis: 80%;
-    display: flex;
+    /* flex-basis: 80%;
+    display: flex; */
+}
+
+#header-gif{
+    width: 100vw;
+    height: 500px;
 }
 
 nav {
-    flex-basis: 20%;
+    /* flex-basis: 20%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; */
+    background-color: #5D21D0;
+    color: #fff;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    font: 120% system-ui;
+    text-align: center;
+    padding: 0px 0px;
 }
 
 a {
     margin: 2px;
     text-decoration: none;
-    color: #7B2CBF;
+    color: silver;
 }
 
 a, p {
