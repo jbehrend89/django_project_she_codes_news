@@ -9,12 +9,12 @@
 
 <div id="story-wrapper">
     <h2>{{ story.title }}</h2>
-    <h3>{{ story.get_category_display }}</h3>
+    <h3>Category: {{ story.get_category_display }}</h3>
     {% if request.user == story.author %}
     <a href="{% url 'news:editStory' pk=story.pk %}">edit</a>
     <a href="{% url 'news:deleteStory' pk=story.pk %}">delete</a>
     {% endif %}
-    <h4><a href="{% url 'users:profile' pk=story.author.pk %}">{{ story.author }}</a></h4>
+    <h4>Author: <a href="{% url 'users:profile' pk=story.author.pk %}">{{ story.author }}</a></h4>
     <div id="story-content">
         <img src="{{ story.image }}">
         {{ story.content|linebreaks }}
