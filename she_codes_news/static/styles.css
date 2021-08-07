@@ -29,11 +29,17 @@ h1 {
 
 h2 {
    font-family: 'Montserrat Subrayada', sans-serif; 
+   color: #ff9100;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-style: oblique;
     margin: 0;
+}
+
+h4 {
+
 }
 
 #header-text {
@@ -60,13 +66,25 @@ nav {
     text-align: center;
     padding: 0px 0px;
 }
+    nav:hover {
+    font-weight: 900;
+    }
 
 a {
     margin: 4px;
     text-decoration: none;
-    color: silver;
 }
 
 a, p {
     font-family: monospace;
+    color: #fff;
+}
+
+#user_name{
+    text-align: center;
+}
+
+
+#hi {
+    padding: 10px;
 }
